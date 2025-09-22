@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #212121;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home_image {
+    background-image: url("../img/imagem_molecula1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    min-width: 100% !important;
+}
+@media (width > 1620px) {
+    #home_image {
+        background-size: 100%;
+    }
+}
+#title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 150%;
+    margin-top: -300px;
+    margin-left: 200px;
+}
+#subtitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 110%;
+    margin-left: 370px;
+}
+#infos_start {
+    margin-top: 250px;
+}
+label {
+    color: white;
+}
+.titulos {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.info{
+    margin: 50px 7vw 0px 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.img_info {
+    max-width: 40vw;
+}
+.text_info {
+    color: white;
+    font-size: 20px;
+}
+
+.titulos {
+    margin-top: 30px;
+}
+.question {
+    background-color: #333333;
+    min-height: 300px;
+    width: 60vw;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3d3d3d;
+    box-shadow: 0px 5px 8px #131313;
+    display: flex;
+    flex-direction: column;
+}
+.enunciado {
+    color: white;
+    font-size: 20px;
+    margin: 25px;
+}
+.answer {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.submit {
+    background-color: #464646;
+    border-style: none;
+    color: white;
+    font-size: 30px;
+    width: 140px;
+    border-radius: 100px;
+    padding: 5px;
+}
+.submit:hover {
+    background-color: #414141;
+    color: rgb(216, 216, 216);
+}
+.alinhador {
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.acerto {
+    background-color: rgba(90, 252, 90, 0.582);
+    height: 50px;
+    width: 80%;
+    margin: 20px 30px;
+    color: rgb(198, 255, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.erro {
+    background-color: rgba(252, 90, 90, 0.582);
+    height: 50px;
+    width: 80%;
+    margin: 20px 30px;
+    color: rgb(255, 186, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.responda {
+    background-color: rgba(252, 222, 90, 0.763);
+    height: 50px;
+    width: 80%;
+    margin: 20px 30px;
+    color: rgb(255, 244, 193);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+#parabens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 600px;
+    font-size: 35px;
+    margin: 50px;
+    display: none;
+}
+footer {
+    margin-top: 20px;
+    background-color: #3d3d3d;
+    color: rgb(138, 138, 138);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 2vw;
+    overflow-x: scroll;
+}
+a {
+    color: rgb(138, 138, 138);
+}
+@media (width < 1200px) {
+    #parabens {
+        font-size: 20px;
+    }
+}
+@media (width < 900px) {
+    .info {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+    .text_info {
+        font-size: 18px;
+    }
+    .img_info {
+        max-width: 70vw;
+    }
+    .acerto {
+        font-size: 12px;
+    }
+    .erro {
+        font-size: 12px;
+    }
+    .responda {
+        font-size: 12px;
+    }
+}
+@media (width < 440px){
+    #title {
+        margin-left: 160px;
+    }
+    #subtitle {
+        margin-left: 300px;
+    }
+}
+.some {
+    display: none !important;
+    animation: sumir 10s ease-in-out;
+}
+@keyframes sumir {
+    from{ opacity: 1;}
+    to{opacity: 0; }
+}
+.aparece {
+    display: flex !important;
+    animation: aparecer 2s ease-in-out;
+}
+@keyframes aparecer {
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}
+#acerto1, #erro1, #responda1,
+#info2, #pergunta_2, #acerto2, #erro2, #responda2,
+#acerto3, #erro3, #responda3, #info3, #pergunta_3,
+#titulo2, #titulo3 {
+    display: none;
+}

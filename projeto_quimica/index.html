@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+    <title>projeto_quimica</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div id="home_image"></div>
+        <div id="title"><h1>Fosfina</h1></div>
+        <div id="subtitle"><h1>PH₃</h1></div>
+        <h1 id="infos_start" class="titulos">Informações iniciais</h1>
+         <!-- QUESTÃO 1-->
+        <section class="info" id="info1">
+            <img class='img_info' src="img/imagem1.jpg" alt="homens trabalhando">
+            <div class="text_info"><p>
+                Fosfina ou hidreto de fósforo (PH3), também conhecida por fosfano, a pressão ambiente é um gás incolor inflamável com a temperatura de ebulição de -88 °C. Em estado puro não possui cheiro, mas é comumente reconhecida pelo seu cheiro de peixe podre, exalado em usos técnicos.
+                <br>
+                Usado em formas de partilhas no agronegócio o hidreto de fósforo é utilizado na atividade de expurgo de sementes ou grãos, matando ou minimizando pragas no armazenamento. Quando aplicado, o composto químico é volatilizado e necessita agir no mínimo por 168 horas, umidade acima de 25% e temperatura acima de 10 °C. 
+            </p></div>
+        </section>
+        <h1 class="titulos" id="titulo1">Questão</h1>
+        <section id="pergunta_1" class="question">
+            <div class="enunciado"><p>
+                <b>Questão 1) </b>Em qual temperatura a fosfina se transforma em gás?</p></div>
+            <div class="answer">
+                <div>
+                    <input type="radio" name="Q1" id="a1">
+                    <label for="a1"><b>A) </b> 100°C</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="Q1" id="b1">
+                    <label for="b1"><b>B) </b>-88°C</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q1" id="c1">
+                    <label for="c1"><b>C) </b> 0°C</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q1" id="d1">
+                    <label for="d1"><b>D) </b>-73°C</label>
+                </div>
+                <div class="alinhador">
+                    <button class="submit" id="butao1" onclick="verifica( 'Q1', 'b1')"><b>Verificar</b></button>
+                </div>
+            </div>
+        </section>
+        <div id="acerto1" class="acerto">
+            <h2>✅Parabéns! Você acertou!</h2>
+        </div>
+        <div id="responda1" class="responda">
+            <h2>Você precisa ecolher uma alternativa!</h2>
+        </div>
+        <div id="erro1" class="erro">
+            <h2>❌ Você errou, tente novamente!</h2>
+        </div>
+        <!-- QUESTÃO 2-->
+        <section class="info" id="info2">
+            <img class='img_info' src="img/imagem_venus.jpg" alt="homens trabalhando">
+            <div class="text_info"><p>
+A fosfina (PH₃) ganhou destaque em 2020, quando um grupo de astrônomos anunciou a detecção desse gás nas nuvens de Vênus. Na Terra, a fosfina é produzida principalmente por processos industriais ou por microrganismos em ambientes sem oxigênio, o que levantou a hipótese de que sua presença em Vênus poderia ser um possível indicativo de atividade biológica. No entanto, a atmosfera venusiana é extremamente quente e ácida, tornando a origem biológica controversa.
+
+            </p></div>
+        </section>
+        <h1 class="titulos" id="titulo2">Questão</h1>
+        <section id="pergunta_2" class="question">
+            <div class="enunciado"><p>
+                <b>Questão 2) </b>Considerando seus elementos químicos, qual alternativa indica corretamente a composição da fosfina?</p></div>
+            <div class="answer">
+                <div>
+                    <input type="radio" name="Q2" id="a2">
+                    <label for="a2"><b>A) </b>1 átomo de fósforo e 3 átomos de hidrogênio.</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="Q2" id="b2">
+                    <label for="b2"><b>B) </b>1 átomo de fósforo e 3 átomos de oxigênio.</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q2" id="c2">
+                    <label for="c2"><b>C) </b>1 átomo de fósforo e 3 átomos de nitrogênio.</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q2" id="d2">
+                    <label for="d2"><b>D) </b>1 átomo de fósforo e 3 átomos de cloro.</label>
+                </div>
+                <div class="alinhador">
+                    <button class="submit" id="butao2" onclick="verifica('Q2', 'a2')"><b>Verificar</b></button>
+                </div>
+            </div>
+        </section>
+        <div id="acerto2" class="acerto">
+            <h2>✅Parabéns! Você acertou!</h2>
+        </div>
+         <div id="responda2" class="responda">
+            <h2>Você precisa ecolher uma alternativa!</h2>
+        </div>
+        <div id="erro2" class="erro">
+            <h2>❌ Você errou, tente novamente!</h2>
+        </div>
+         <!-- QUESTÃO 3-->
+        <section class="info" id="info3">
+            <img class='img_info' src="img/molecula.png" alt="homens trabalhando">
+            <div class="text_info"><p>
+A fosfina é uma molécula formada por um átomo de fósforo central ligado a três átomos de hidrogênio. Sua estrutura é semelhante à da amônia (NH₃), por causa da repulsão dos pares de elétrons. O fósforo possui um par de elétrons não ligantes, que empurra as ligações P–H para baixo, criando um ângulo de ligação de aproximadamente 93°. Essa distribuição cria suas propriedades físicas, como sua baixa solubilidade em água e alta volatilidade.
+
+            </p></div>
+        </section>
+        <h1 class="titulos" id="titulo3">Questão</h1>
+        <section id="pergunta_3" class="question">
+            <div class="enunciado"><p>
+                <b>Questão 3) </b>De acordo com o texto qual é a geometria molecular da fosfina?</p></div>
+            <div class="answer">
+                <div>
+                    <input type="radio" name="Q3" id="a3">
+                    <label for="a3"><b>A) </b>Tetraédrica</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="Q3" id="b3">
+                    <label for="b3"><b>B) </b>Linear</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q3" id="c3">
+                    <label for="c3"><b>C) </b>Trigonal plana</label>
+                </div>
+                <div>
+                    <input type="radio" name="Q3" id="d3">
+                    <label for="d3"><b>D) </b>Piramidal trigonal</label>
+                </div>
+                <div class="alinhador">
+                    <button class="submit" id="butao3" onclick="verifica('Q3', 'd3')"><b>Verificar</b></button>
+                </div>
+            </div>
+        </section>
+        <div id="acerto3" class="acerto">
+            <h2>✅Parabéns! Você acertou!</h2>
+        </div>
+         <div id="responda3" class="responda">
+            <h2>Você precisa ecolher uma alternativa!</h2>
+        </div>
+        <div id="erro3" class="erro">
+            <h2>❌ Você errou, tente novamente!</h2>
+        </div>
+        <div id="parabens"><h1>Parabéns! Você concluiu o quiz sobre a fosfina!!!</h1></div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Autor: Giordano Goulart Zanetti <br>
+                Número de matrícula: 2024314558 <br>
+                Email institucional: 2024314558@aluno.riogrande.ifrs.edu.br
+            </p>
+        </div>
+        <div>
+            Referências: <br>
+            <a href="">https://www.bbc.com/portuguese/geral-54159996</a> <br>
+            <a href="">https://www.elebratec.com.br/caracteristicas-tecnicas-dos-gases/gas-fosfina/</a> <br>
+            <a href="">https://www-britannica-com.translate.goog/science/phosphine</a>
+        </div>
+    </footer>
+</body>
+
+</html>
