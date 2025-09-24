@@ -6,6 +6,13 @@
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    color: white;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 body {
     background-color: #212121;
 }
@@ -165,7 +172,9 @@ footer {
     align-items: center;
     padding: 10px 20px;
     gap: 2vw;
-    overflow-x: scroll;
+}
+footer div {
+    width: 50%;
 }
 a {
     color: rgb(138, 138, 138);
@@ -197,6 +206,9 @@ a {
     .responda {
         font-size: 12px;
     }
+    .question {
+        width: 70vw;
+    }
 }
 @media (width < 440px){
     #title {
@@ -205,10 +217,13 @@ a {
     #subtitle {
         margin-left: 300px;
     }
+    .question {
+        width: 80vw;
+    }
+
 }
 .some {
-    display: none !important;
-    animation: sumir 10s ease-in-out;
+    animation: sumir 1s ease-in-out;
 }
 @keyframes sumir {
     from{ opacity: 1;}
